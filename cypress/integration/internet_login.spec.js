@@ -10,7 +10,6 @@ describe('Validate the login page', () => {
         cy.get("h2").contains("Secure Area")
         cy.get(".icon-2x.icon-signout").click()
         cy.get(".flash.success").contains("You logged out of the secure area!")
- 
-        })
+         })
         
     })
