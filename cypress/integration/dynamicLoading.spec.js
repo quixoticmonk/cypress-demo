@@ -11,7 +11,6 @@ describe('Validating the dynamic loading..',()=>{
         cy.get('button').click()
         cy.get('#finish > h4').contains("Hello World!").should("not.be.visible")
         cy.get('#loading > img',{timeout:10000}).should("not.be.visible")
-
         cy.get('#finish > h4').contains("Hello World!").should("be.visible")
     })
 
